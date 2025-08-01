@@ -9,6 +9,12 @@ https://2048ai.net/682d3b76606a8318e8586a7b.html?dp_token=eyJ0eXAiOiJKV1QiLCJhbG
 
 https://github.com/cgohlke/talib-build/releases
 
-
+pip install pandas
 py -m pip install ta_lib-0.6.4-cp39-cp39-win_amd64.whl
+pip install yfinance
+>pip install numpy
 py -m pip install backtesting
+pip install matplotlib
+ pip install akshare
+
+ ![alt text](eb036a2d2d2318.png)
