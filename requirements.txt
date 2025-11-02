@@ -1,4 +1,4 @@
-akshare>=1.1.80  # 行情数据获取
+akshare>=1.10.66  # 行情数据获取
 pandas>=1.3.0    # 数据处理
 numpy>=1.21.0    # 数值计算
 python-dateutil>=2.8.2  # 日期处理（pandas依赖）
