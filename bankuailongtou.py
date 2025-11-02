@@ -47,27 +47,6 @@ def get_market_breadth():
         "连板股数量": "需接入历史涨停接口计算",
         "市场平均涨幅": f"{avg_gain:.2f}%"
     }
-def get_fund_concentration():
-    try:
-        # 东方财富板块数据
-        industry_df = ak.stock_board_industry_name_em()
-        source = "东方财富"
-    except Exception as e:
-        print(f"[警告] 东方财富接口失败：{e}")
-        try:
-            # 同花顺板块数据
-            industry_df = ak.stock_board_industry_name_ths()
-            source = "同花顺"
-        except Exception as e2:
-            return {"错误": f"板块数据获取失败：{e2}"}
-
-    industry_top5 = industry_df.nlargest(5, "涨跌幅")[["板块名称", "涨跌幅"]].reset_index(drop=True)
-    industry_top5["涨跌幅"] = industry_top5["涨跌幅"].astype(float).round(2).astype(str) + "%"
-    
-    return {
-        "数据来源": source,
-        "资金聚焦行业（当日涨幅前5）": industry_top5
-    }
 # def get_market_breadth():
 #     """一次性获取赚钱效应（实时失败则用历史数据）"""
 #     try:
