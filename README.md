@@ -16,5 +16,19 @@ pip install yfinance
 py -m pip install backtesting
 pip install matplotlib
  pip install akshare
-
+pip install mplfinance
  ![alt text](eb036a2d2d2318.png)
+
+
+# 获取行情的步骤：
+# Windows (cmd)
+python -m venv stock_env
+
+stock_env\Scripts\activate
+
+安装依赖（确保已进入项目目录，且 requirements.txt 在此目录下）
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+验证安装
+
+pip list | findstr "akshare pandas numpy"  # Windows
