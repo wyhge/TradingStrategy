@@ -18,7 +18,7 @@ import tushare as ts
 # df = pro.query('daily', ts_code='000001.SZ', start_date='20180701', end_date='20180718')
 # print(df)
 
-pro = ts.pro_api()
+pro = ts.pro_api(token='6088dc17822487a32d92cb588f75409b9415195a4d7bfd94fa9141a9')
 
 #设置你的token
 df = pro.user(token='6088dc17822487a32d92cb588f75409b9415195a4d7bfd94fa9141a9')

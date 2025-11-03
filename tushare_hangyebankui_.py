@@ -40,7 +40,7 @@ def get_boards_chg(market_type, trade_date, limit=50):
         except Exception as e:
             print(f"[警告] {index_name}({index_code}) 获取失败: {e}")
         # 控制调用速度（必要时开启）
-        # time.sleep(0.3)
+        time.sleep(0.1)
 
     df_result = pd.DataFrame(data_list)
     if not df_result.empty:
