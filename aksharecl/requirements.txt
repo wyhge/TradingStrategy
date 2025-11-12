@@ -1,0 +1,5 @@
+backtrader
+akshare
+pandas
+numpy
+matplotlib
