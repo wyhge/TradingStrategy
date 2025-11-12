@@ -17,7 +17,6 @@ py -m pip install backtesting
 pip install matplotlib
  pip install akshare
 pip install mplfinance
- ![alt text](eb036a2d2d2318.png)
 
 
 # 获取行情的步骤：
