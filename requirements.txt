@@ -5,3 +5,4 @@ python-dateutil>=2.8.2  # 日期处理（pandas依赖）
 tushare>=1.2.10
 matplotlib>=3.10.5
 yfinance
+ta
