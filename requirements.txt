@@ -6,3 +6,5 @@ tushare>=1.2.10
 matplotlib>=3.10.5
 yfinance
 ta
+scikit-learn
+xgboost
